@@ -61,6 +61,10 @@ nav .navbar .menu li{
   color: #4070f4;
   transition: all 0.4s ease;
 }
+#btn a{
+  text-decoration: none;
+  color: #fff;
+}
 #btn{
   padding: 10px 25px;
   background: #4070f4;
@@ -71,10 +75,14 @@ nav .navbar .menu li{
   border:none;
   transition: all 300ms ease-in-out;
 }
+
 #btn:hover{
   background: #fff;
   color: #4070f4;
   transition: all 300ms ease-in-out;
+}
+#btn:hover a{
+  color: #4070f4;
 }
 
 
@@ -172,4 +180,400 @@ section{
   font-size: 17px;
   font-weight: 500;
   border:none;
+}
+
+#contact{
+  min-height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  backdrop-filter: blur(10px);
+  background-color: #ffffff21;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+.heading{
+  text-align: center;
+  width: 100%;
+  padding: 1rem;
+  font-size: 40px;
+}
+.contact-cont{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.contact-box a{
+  width: 250px;
+  height: 70px;
+  border: 1px solid #4070f4;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+  font-size: 22px;
+  transition: all 0.5s ease-in-out;
+}
+.contact-box a:hover{
+  background-color: #4070f4;
+  color: #fff;
+  transition: all 0.5s ease-in-out;
+}
+.contact-b-c {
+  font-size: 22px;
+  padding: 0 1rem;
+}
+.contact-b-c i{
+  padding: 0 0.5rem;
+}
+.contact-nav{
+  text-align: center;
+  width: 100%;
+  padding-bottom: 2rem;
+}
+.contact-nav ul{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  font-size: 20px;
+}
+.contact-nav ul li{
+  padding: 0 1rem;
+  margin-bottom: 0;
+}
+.contact-box a,i{
+  text-decoration: none;
+  color: #4070f4;
+}
+.contact-nav a{
+  text-decoration: none;
+  color: #4070f4;
+}
+#connect{
+  width: 100%;
+  min-height: 50vh;
+  padding-bottom: 20px;
+  padding-top: 4rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+ align-items: center;
+}
+.connect h3{
+  font-size: 50px;
+}
+.c-t p{
+  font-size: 20px;
+  padding: 0.5rem 0;
+  color: #3c3c3c;
+  text-align: center;
+}
+.c-btn{
+  margin-top: 10px;
+  padding: 0.8rem 2.5rem;
+  font-size: 16px;
+  border: 1px solid #4070f4;
+  color: #4070f4;
+  border-radius: 45px;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.c-btn:hover{
+  background-color: #4070f4;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+
+
+
+
+
+
+@media (max-width: 1024px) {
+  nav .navbar {
+    width: 94%;
+  }
+  nav .navbar .logo a {
+    font-size: 30px;
+  }
+  nav .navbar .menu li {
+    margin: 0 5px;
+  }
+  .navbar .menu a {
+    font-size: 16px;
+  }
+  .home {
+    padding: 40px 60px;
+  }
+  .home-content {
+    width: 100%;
+    max-width: 700px;
+  }
+  .title {
+    font-size: 48px;
+  }
+  #mid {
+    margin: auto 25px;
+    padding: 25px;
+  }
+
+  .project-items {
+    width: 45%;
+  }
+
+  .connect h3 {
+    font-size: 48px;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  nav {
+    padding: 1rem 0;
+  }
+  nav .navbar {
+    width: 92%;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav .navbar .logo a {
+    font-size: 28px;
+  }
+
+  nav .navbar .menu {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  nav .navbar .menu li {
+    margin: 0 4px;
+  }
+  .navbar .menu a {
+    font-size: 14px;
+  }
+  #btn {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+  section {
+    min-height: auto;
+  }
+
+  #home {
+    min-height: 100vh;
+    padding-top: 150px;
+    padding-bottom: 50px;
+  }
+  .home {
+    width: 90%;
+    padding: 35px 25px;
+  }
+  .home-content {
+    width: 100%;
+  }
+  .title {
+    font-size: clamp(36px, 10vw, 50px);
+    line-height: 1.1;
+  }
+
+  .home-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 20px 0;
+  }
+  #mid {
+    width: calc(100% - 30px);
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 20px;
+  }
+  #about {
+    margin-bottom: 30px;
+  }
+
+  .about-top {
+    gap: 35px;
+  }
+  .about-top-cnt h4 {
+    font-size: 30px;
+  }
+
+  .about-top-cnt p {
+    font-size: 17px !important;
+    line-height: 1.6;
+  }
+
+  .about-top-link {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .about-top-link h4 {
+    margin-bottom: 0;
+  }
+  .project {
+    padding: 25px 15px;
+  }
+
+  .project h2 {
+    font-size: 30px;
+  }
+
+  .project-wrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .project-items {
+    width: 100%;
+    min-height: 280px;
+    padding: 20px;
+  }
+  .project-items h2 {
+    font-size: 25px;
+  }
+  .project-items p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  .btn {
+    margin-top: 25px;
+  }
+  #connect {
+    min-height: 60vh;
+    padding: 60px 20px;
+  }
+
+  .connect h3 {
+    font-size: clamp(35px, 9vw, 48px);
+    line-height: 1.15;
+  }
+
+  .c-t p {
+    font-size: 17px;
+    line-height: 1.5;
+  }
+
+  .c-btn {
+    padding: 12px 25px;
+    font-size: 15px;
+  }
+  #contact {
+    min-height: 50vh;
+    padding: 50px 20px;
+  }
+  .heading {
+    padding: 10px;
+    font-size: 30px;
+  }
+  .heading h1 {
+    font-size: 38px;
+  }
+  .contact-cont {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .contact-box {
+    width: 100%;
+  }
+
+  .contact-box a {
+    width: 100%;
+    max-width: 300px;
+    height: 60px;
+    margin: auto;
+    font-size: 19px;
+  }
+
+}
+@media (max-width: 480px) {
+  nav .navbar {
+    gap: 12px;
+  }
+
+  nav .navbar .logo a {
+    font-size: 25px;
+  }
+
+  nav .navbar .menu {
+    gap: 6px;
+    justify-content: center;
+  }
+
+  nav .navbar .menu li {
+    margin: 0 2px;
+  }
+
+  .navbar .menu a {
+    font-size: 12px;
+  }
+
+  #btn {
+    padding: 7px 12px;
+    font-size: 12px;
+  }
+  #home {
+    padding-top: 160px;
+  }
+  .home {
+    width: 92%;
+    padding: 30px 20px;
+  }
+  .title {
+    font-size: 36px;
+  }
+  .home-content p {
+    font-size: 15px;
+  }
+
+  #mid {
+    width: calc(100% - 20px);
+    padding: 15px;
+  }
+
+  .about-top-cnt h4 {
+    font-size: 27px;
+  }
+
+  .about-top-cnt p {
+    font-size: 16px !important;
+  }
+  .project {
+    padding: 20px 10px;
+  }
+  .project-items {
+    padding: 18px;
+    min-height: 300px;
+  }
+  #connect {
+    padding: 50px 15px;
+  }
+  .connect h3 {
+    font-size: 32px;
+  }
+  .c-t p {
+    font-size: 15px;
+  }
+  .heading h1 {
+    font-size: 32px;
+  }
+
+  .contact-box a {
+    max-width: 280px;
+  }
 }
