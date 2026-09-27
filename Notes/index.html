@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JavaScript Notes</title>
+
+    <link rel="stylesheet" href="style.css">
+        <link
+      href="https://fonts.googleapis.com/css?family=Syne:600%2C500%7CRoboto:400&amp;display=swap"
+      rel="stylesheet"
+      property="stylesheet"
+      media="all"
+      type="text/css"
+    />
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            JS<span>Notes</span>
+        </div>
+        <nav>
+            <a href="#intro">Introduction</a>
+            <a href="#variables">Variables</a>
+            <a href="#datatypes">Data Types</a>
+            <a href="#operators">Operators</a>
+            <a href="#ifelse">If Else</a>
+            <a href="#switch">Switch</a>
+            <a href="#loops">Loops</a>
+            <a href="#functions">Functions</a>
+            <a href="#arrays">Arrays</a>
+            <a href="#objects">Objects</a>
+        </nav>
+
+    </header>
+
+    <main class="content">
+        <section class="hero">
+            <p class="tag">JAVASCRIPT NOTES</p>
+        </section>
+        <section class="topic" id="intro">
+            <h2>1. Introduction to JavaScript</h2>
+            <div class="card">
+                <h3>Definition</h3>
+                <p>
+                    JavaScript is a programming language used to make
+                    web pages interactive and dynamic. It works together
+                    with HTML and CSS to create modern web applications.
+                </p>
+            </div>
+            <div class="code-container">
+                <div class="card">
+                    <h3>Example</h3>
+                    <pre><code>console.log("Hello JavaScript");</code></pre>
+                </div>
+                <div class="card">
+                    <h3>Output</h3>
+                    <div class="output">
+                        Hello JavaScript
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="topic" id="variables">
+            <h2>2. Variables</h2>
+            <div class="card">
+                <h3>Definition</h3>
+                <p>
+                    A variable is a container used to store data values.
+                    The value stored in a variable can be used later
+                    in a program.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Syntax</h3>
+                <pre><code>let variableName = value;</code></pre>
+            </div>
+            <div class="code-container">
+
+                <div class="card">
+                    <h3>Example</h3>
+                    <pre><code>let name = "Sanjay";
+let age = 21;
+
+console.log(name);
+console.log(age);</code></pre>
+
+                </div>
+                <div class="card">
+                    <h3>Output</h3>
+                    <div class="output">
+                        Sanjay<br>
+                        21
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Types of Variable Declaration</h3>
+
+                <ul class="points">
+                    <li>
+                        <strong>var</strong> - Used to declare variables
+                        using the older JavaScript syntax.
+                    </li>
+
+                    <li>
+                        <strong>let</strong> - Used when the value of
+                        a variable may change.
+                    </li>
+
+                    <li>
+                        <strong>const</strong> - Used when a variable
+                        should not be reassigned.
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </section>
+
+        <section class="topic" id="datatypes">
+
+            <h2>3. Data Types</h2>
+
+            <div class="card">
+
+                <h3>Definition</h3>
+
+                <p>
+                    Data types define the type of value that a variable
+                    can store in JavaScript.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>Types of Data Types</h3>
+
+                <ul class="points">
+
+                    <li>String</li>
+                    <li>Number</li>
+                    <li>Boolean</li>
+                    <li>Undefined</li>
+                    <li>Null</li>
+                    <li>Object</li>
+                    <li>BigInt</li>
+                    <li>Symbol</li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="code-container">
+
+                <div class="card">
+
+                    <h3>Example</h3>
+
+                    <pre><code>let name = "Sanjay";
+let age = 21;
+let student = true;
+
+console.log(typeof name);
+console.log(typeof age);
+console.log(typeof student);</code></pre>
+
+                </div>
+
+
+                <div class="card">
+
+                    <h3>Output</h3>
+
+                    <div class="output">
+                        string<br>
+                        number<br>
+                        boolean
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="topic" id="operators">
+
+            <h2>4. Operators</h2>
+
+            <div class="card">
+
+                <h3>Definition</h3>
+
+                <p>
+                    Operators are symbols used to perform different
+                    operations on values and variables.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+                <h3>Types of Operators</h3>
+                <ul class="points">
+
+                    <li>Arithmetic Operators</li>
+                    <li>Assignment Operators</li>
+                    <li>Comparison Operators</li>
+                    <li>Logical Operators</li>
+                    <li>Ternary Operator</li>
+
+                </ul>
+
+            </div>
+            <div class="code-container">
+
+                <div class="card">
+
+                    <h3>Example</h3>
+
+                    <pre><code>let a = 10;
+let b = 5;
+
+console.log(a + b);
+console.log(a - b);
+console.log(a * b);
+console.log(a / b);</code></pre>
+
+                </div>
+
+
+                <div class="card">
+
+                    <h3>Output</h3>
+
+                    <div class="output">
+                        15<br>
+                        5<br>
+                        50<br>
+                        2
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+        <section class="topic" id="ifelse">
+            <h2>5. If...Else Statement</h2>
+            <div class="card">
+
+                <h3>Definition</h3>
+                <p>
+                    The if...else statement is used to execute different
+                    blocks of code depending on whether a condition is
+                    true or false.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>Syntax</h3>
+
+                <pre><code>if (condition) {
+
+    // code if condition is true
+
+} else {
+
+    // code if condition is false
+
+}</code></pre>
+
+            </div>
+
+
+            <div class="code-container">
+
+                <div class="card">
+
+                    <h3>Example</h3>
+
+                    <pre><code>let age = 20;
+
+if (age >= 18) {
+
+    console.log("Eligible to vote");
+
+} else {
+
+    console.log("Not eligible to vote");
+
+}</code></pre>
+
+                </div>
+
+
+                <div class="card">
+
+                    <h3>Output</h3>
+
+                    <div class="output">
+                        Eligible to vote
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Key Points</h3>
+
+                <ul class="points">
+                    <li>
+                        <strong>if</strong> checks a condition.
+                    </li>
+                    <li>
+                        If the condition is true, the if block executes.
+                    </li>
+                    <li>
+                        If the condition is false, the else block executes.
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+        <section class="topic" id="switch">
+            <h2>6. Switch Statement</h2>
+            <div class="card">
+                <h3>Definition</h3>
+                <p>
+                    The switch statement is used to execute one block
+                    of code from multiple possible cases.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Syntax</h3>
+                <pre><code>switch (expression) {
+
+    case value1:
+        // code
+        break;
+
+    case value2:
+        // code
+        break;
+
+    default:
+        // code
+
+}</code></pre>
+            </div>
+            <div class="code-container">
+                <div class="card">
+                    <h3>Example</h3>
+                    <pre><code>let day = 2;
+switch (day) {
+
+    case 1:
+        console.log("Monday");
+        break;
+
+    case 2:
+        console.log("Tuesday");
+        break;
+
+    default:
+        console.log("Invalid day");
+
+}</code></pre>
+
+                </div>
+                <div class="card">
+                    <h3>Output</h3>
+                    <div class="output">
+                        Tuesday
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="topic" id="loops">
+            <h2>7. Loops</h2>
+            <div class="card">
+                <h3>Definition</h3>
+                <p>
+                    Loops are used to execute a block of code repeatedly
+                    until a specified condition is met.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Types of Loops</h3>
+                <ul class="points">
+                    <li>for loop</li>
+                    <li>while loop</li>
+                    <li>do...while loop</li>
+                    <li>for...of loop</li>
+                    <li>for...in loop</li>
+                </ul>
+            </div>
+            <div class="code-container">
+                <div class="card">
+                    <h3>Example - for Loop</h3>
+                    <pre><code>for (let i = 1; i <= 5; i++) {
+
+    console.log(i);
+
+}</code></pre>
+
+                </div>
+                <div class="card">
+                    <h3>Output</h3>
+                    <div class="output">
+                        1<br>
+                        2<br>
+                        3<br>
+                        4<br>
+                        5
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="topic" id="arrays">
+
+            <h2>9. Arrays</h2>
+
+            <div class="card">
+                <h3>Definition</h3>
+                <p>
+                    An array is a special variable used to store
+                    multiple values in a single variable.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Syntax</h3>
+                <pre><code>let arrayName = [value1, value2, value3];</code></pre>
+            </div>
+            <div class="code-container">
+                <div class="card">
+                    <h3>Example</h3>
+                    <pre><code>let fruits = [
+    "Apple",
+    "Mango",
+    "Orange"
+];
+
+console.log(fruits[0]);</code></pre>
+                </div>
+                <div class="card">
+                    <h3>Output</h3>
+                    <div class="output">
+                        Apple
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
